@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'MapoPeacefull';
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #414141;
+}
+
+.container {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+button {
+    width: 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffffff00;
+}
+
+.today {
+    background-color: #5edee7;
+    border-radius: 50%;
+}
+
+#showMonth {
+    font-size: 15px;
+}
+
+.calendar-table {
+    max-width: 350px;
+}
+
+.control {
+    display: flex;
+    width: 100%;
+    padding : 10px 0;
+    color: #000;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+
+#newEventModal {
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50%-175px);
+    position: absolute;
+}
+
+#deleteEventModal {
+    display: none;
+    padding: 25px;
+}
+
+#eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+}
+
+#ebentTitleInput.error {
+    border: 2px solid red;
+}
+
+#cancelBtn, #deleteBtn {
+    text-align: center;
+    border: 2px solid rgb(243, 79, 79);
+    background-color: rgb(243, 79, 79);
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+#saveBtn, #closeBtn {
+    text-align: center;
+    border: 2px solid  rgb(255, 234, 234);
+    background-color: rgb(255, 234, 234);
+}
+
+#eventText {
+    margin-top: 25px;
+    font-size: 15px;
+    word-break: break-all;
+}
+
+#modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #5c5c5c9c;
+}
+
+#clicked-date {
+    min-width: 350px;
+    max-width: 350px;
+    background-color: white;
+    height: 380px;
+    border: 1px solid rgb(252, 228, 225);
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#weekdays {
+    width: 100%;
+    display: flex;
+    color: rgb(61, 61, 61);
+}
+#weekdays div {
+    width: 40px;
+    padding: 10px;
+}
+
+#calendar {
+    width: 100%;
+    padding-top: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#calendar-box {
+    background-color: white;
+    height: 380px;
+    border: 1px solid rgb(252, 228, 225);
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.day {
+    width: 50px;
+    padding: 10px;
+    height: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.day:hover {
+    background-color:  #ffdd93;
+    border-radius: 50%;
+}
+
+.blank {
+    width: 50px;
+    cursor: default;
+}
+
+.event {
+    font-size: 0px;
+    padding: 3px;
+    background-color: aquamarine;
+    border: 5px;
+    max-height: 10px;
+    overflow: hidden;
+}
+
+#clicked-date {
+    display: flex;
+    flex-direction: column;
+}
+
+#todolist {
+    width: 90%;
+    height: 70%;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin: 1rem;
+    border: 3px solid #ffdd93;
+    border-radius: 15px;
+}
+
+#clickedDate {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    margin-left: 1rem;
+    background-color: #ffdd93;
+    border-radius: 50%;
+    padding: 10px;
+}
+#clickedDay {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    margin-left: 1rem;
+    background-color: #ffdd93;
+    border-radius: 50%;
+    padding: 10px;
+}
+@font-face {
+    font-family: 'MapoPeacefull';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

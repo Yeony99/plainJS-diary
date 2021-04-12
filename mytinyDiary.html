@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mytinyDiary.css">
+    <title>today your plan</title>
+</head>
+<body>
+    <div class="container">
+        <div id="calendar-box">
+            <div class="control">
+                <button type="button" class="btn-ctrl" id="prev">◀</button>
+                <div id="showMonth"></div>
+                <button type="button" class="btn-ctrl" id="next">▶</button>
+            </div>
+            <div class="calendar-table">
+                <div id="weekdays">
+                    <div style="color: #e76b6b;">Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div style="color: #6ba5e7;">Sat</div>
+                </div>
+                <div id="calendar">
+                    <!-- contents will be here from JS-->
+                </div>
+            </div>
+        </div>    
+        <div id="modalBackDrop"></div>
+        <div id="newEventModal">
+            <h2>New</h2>
+            <input id="eventTitleInput" placeholder="Event Title">
+            <button id="saveBtn">save</button>
+            <button id="cancelBtn">cancel</button>
+        </div>        
+        <div id="clicked-date">
+            <!-- <div id="clickedDay"></div> -->
+            <div id="clickedDate"></div>
+            <div id="todolist">
+                <div id="deleteEventModal">
+                    <h4>How's your day</h4>
+                    <p id="eventText"></p>
+                    <button id="deleteBtn">delete</button>
+                    <button id="closeBtn">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="mytinyDiary.js"></script>
+</body>
+
+</html>
